@@ -1,4 +1,4 @@
-# Practicing implementing different algorithms and memoized versions of common coding problems.
+# Implementations of different algorithms and memoized versions of common coding problems.
 
-# dynamic programming
+## dynamic programming
 1. Fibonacci Sequence
