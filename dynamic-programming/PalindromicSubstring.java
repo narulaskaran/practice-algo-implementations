@@ -86,24 +86,31 @@ public class PalindromicSubstring {
   }
 
   public static void main(String[] args) {
-    String[] inputs = { "babad", "cbbd", "a", "ac", "babcbabcbaccba", "forgeeksskeegfor",
-        "bigwordracecarracecaristhecoolboy",
-        "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth" };
+    char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+        't', 'u', 'v', 'w', 'x', 'y', 'z' };
     String solution;
     long start;
     long end;
-    for (String s : inputs) {
+    for (int i = 20; i < 30; i++) {
+      String s = "";
+      for (int j = 0; j < i; j++) {
+        s += alphabet[(int) (Math.random() * alphabet.length)];
+      }
+
+      System.out.println("---");
+      System.out.println("String:\t" + s);
+
       // memo approach
       start = System.currentTimeMillis();
       solution = findSubstringMemo(s, new HashMap<String, String>());
       end = System.currentTimeMillis();
-      System.out.println(String.format("Memo Palindrome(%s) = %s:\t%d ms", s, solution, end - start));
+      System.out.println(String.format("Memo Palindrome = %s:\t%d ms", solution, end - start));
 
       // naive approach
       start = System.currentTimeMillis();
       solution = findSubstring(s);
       end = System.currentTimeMillis();
-      System.out.println(String.format("Naive Palindrome(%s) = %s:\t%d ms", s, solution, end - start));
+      System.out.println(String.format("Naive Palindrome = %s:\t%d ms", solution, end - start));
     }
   }
 }
