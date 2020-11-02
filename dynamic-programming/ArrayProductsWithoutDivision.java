@@ -74,6 +74,11 @@ public class ArrayProductsWithoutDivision {
     return products;
   }
 
+  /**
+   * Helper to print out an int array.
+   * @param arr - int[] to print out
+   * @return - String representation of arr
+   */
   public static String printArr(int[] arr) {
     StringBuilder str = new StringBuilder();
     str.append("[");
