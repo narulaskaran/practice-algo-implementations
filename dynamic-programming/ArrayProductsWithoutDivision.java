@@ -102,7 +102,7 @@ public class ArrayProductsWithoutDivision {
     long start, end;
     int[] val;
 
-    System.out.println("Input Array Lenght:\t" + arr.length);
+    System.out.println("Input Array Length:\t" + arr.length);
 
     // memo
     start = System.currentTimeMillis();
