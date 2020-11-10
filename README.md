@@ -1,10 +1,17 @@
-# Implementations of different algorithms and memoized versions of common coding problems.
+# My implementations of different algorithms and my solutions to various coding challenges.
 
-## dynamic programming
+## Leetcode
+### dynamic programming
 1. [Fibonacci Sequence](dynamic-programming/Fibonacci.java)
 2. [Longest Palindromic Substring](dynamic-programming/PalindromicSubstring.java)
 3. [Product Int Array](dynamic-programming/ArrayProductsWithoutDivision.java)
 4. [Longest Common Subsequence Between Strings](dynamic-programming/LongestCommonSubsequence.java)
 
-## graphs
+### graphs
 1. [Far From Land (BFS)](graphs/FarFromLand.java)
+
+## Princeton Algorithms
+Coding exercises from the Princeton Algorithms course on Coursera. 
+### Percolation
+1. [Percolation Structure](percolation/Percolation.java)
+2. [Percolation Stats](percolation/PercolationStats.java)
